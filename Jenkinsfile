@@ -37,7 +37,8 @@ pipeline {
 				echo "Integration Test"
 			}
 		}
-	} post {
+	} 
+	post {
 		always {
 			echo "I am good and run always."
 		}
@@ -47,6 +48,5 @@ pipeline {
 		failure {
 			echo "run when not-successful"
 		}
-
 	}
 }
